@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_16">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户登录"
+        android:textColor="@color/text_important"
+        android:textSize="24sp"
+        android:layout_marginTop="@dimen/spacing_32"
+        android:layout_marginBottom="@dimen/spacing_32" />
+
+    <!-- 用户名输入框 -->
+    <EditText
+        android:id="@+id/et_login_username"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="请输入用户名"
+        android:background="@drawable/edittext_background"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp" />
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="请输入密码"
+        android:background="@drawable/edittext_background"
+        android:paddingHorizontal="16dp"
+        android:textSize="14sp"
+        android:inputType="textPassword"
+        android:layout_marginTop="16dp" />
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btn_login_submit"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="登录"
+        android:background="@drawable/button_background"
+        android:textColor="@color/bg_white"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp" />
+
+    <!-- 还没有账号？去注册 -->
+    <TextView
+        android:id="@+id/tv_go_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/spacing_16"
+        android:layout_gravity="center_horizontal"
+        android:text="还没有账号？去注册"
+        android:textColor="@color/primary"
+        android:textSize="14sp" />
+
+</LinearLayout>
